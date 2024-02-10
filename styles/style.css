@@ -1,0 +1,87 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.container{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    background-color: #E5E5E5;
+   
+}
+
+.sessao-direita{
+  
+    flex: 1.5;
+    padding: 30px;
+    flex-direction: column;
+
+}
+
+
+.area{
+  width: 680px;
+  height: 48px;
+  margin: 30px;
+  font-family: inter;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background-color: #E5E5E5;
+
+
+
+}
+
+#placeholder-text::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+}
+.botoes{
+    justify-content: center;
+
+    background-color: #0A3871;
+    width: 328px;
+    color: #E5E5E5;
+  
+
+}
+
+.sessao-esquerda{
+
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+   
+}
+
+.card-img{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 918px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.imagem{
+    width: 336px;
+    height: 304px;
+}
+
+.p1{
+    color: #343A40;
+    font-weight: bolder;
+    font-size: 24px;
+
+}
+.mensagens{
+    font-family: inter;
+    font-size: 24px;
+    margin: 10px;
+    text-align:left;
+    
+}
