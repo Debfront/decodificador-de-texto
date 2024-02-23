@@ -1,58 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador de texto</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+  </head>
 
-<body>
+  <body>
+    <main class="main">
+      <section class="direita"></section>
 
-    <main class="container">
-
-        <section class="sessao-direita">
-            <div>
-                <img src="./images/logo.png" alt="">
+      <section class="esquerda">
+      
+          <div class="card">
+            <div class="imagem">
+              <img src="./images/looking.png" alt="">
             </div>
+            <div class="paragrafos">
 
-            <textarea placeholder="Digite seu texto" class="area" id="placeholder-text" name="area" rows="10"
-                cols="50"></textarea>
-            <br>
-
-            <div class="observacao">
-                <img src="./images/simbolo.png" alt="" srcset="" width="16px">
-                <p>Apenas letras minúsculas e sem acento.</p>
+              <p class="p1">Nenhuma mensagem <br> encontrada</p> 
+              <p class="p2">Digite um texto que você deseja <br>criptografar ou descriptografar.</p>  
             </div>
-
-            <div class="container-botao">
-                <button class="botao-cripto" type="button">Criptografar</button>
-                <button class="botao-descripto" type="button">Descriptografar</button>
-
-            </div>
-        </section>
-
-
-        <section class="sessao-esquerda">
-            
-            <div class="card-img">
-                <div class="imagem">
-                    <img src="./images/looking.png" alt="">
-                </div>
-                <div class="mensagens">
-                    <p class="p1">Nenhuma mensagem encontrada </p>
-                    <p class="p2">Digite o texto que você deseja criptografar ou descriptografar</p>
-                </div>
-
-            </div>
-
-        </section>
-
+          
+          </div>
+          
+        
+      </section>
     </main>
-
-
-    <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>
