@@ -13,7 +13,29 @@ body {
 }
 
 .direita {
-  flex: 2.1;
+  display: flex;
+  flex: 2;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: space-around;
+  padding: 90px;
+  
+}
+
+.textarea {
+  display: flex;
+  width: 680px;
+  height: 48px;
+}
+
+.botao {
+  display: flex;
+  gap: 10px;
 }
 
 .esquerda {
@@ -21,9 +43,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 15px;
-
 }
-
 
 .card {
   flex: 1;
@@ -34,36 +54,33 @@ body {
   border-radius: 30px;
   align-items: center;
   justify-content: center;
-  gap:5px;
- 
+  gap: 5px;
 }
-
 
 .imagem {
   width: 336px;
   height: 304px;
 }
 
-.paragrafos{
+.paragrafos {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items:center;
+  align-items: center;
   word-wrap: break-word;
-
-
 }
 
-.p1{
+.p1 {
   font-family: inter;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   line-height: 1.2em;
-
 }
-.p2{
+.p2 {
   font-family: inter;
   font-size: 16px;
-  line-height: 1.4em
+  line-height: 1.4em;
 }
+
+
