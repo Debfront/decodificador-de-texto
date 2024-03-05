@@ -26,26 +26,39 @@ body {
   gap: 25px;
 }
 
-textarea {
+.text-area {
   display: flex;
   width: 680px;
   height: 100%;
-  margin-left: 90px;
   border: 0 none;
   background-color: #e5e5e5;
-   resize: none;
+  resize: none;
+  font-family: inter;
+  font-size: 20px;
+
 }
-textarea:focus,
+.text-area:focus,
 input:focus,
 select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
 }
-textarea::placeholder {
+.text-area::placeholder {
   font-family: inter;
   font-size: 32px;
   color: #0a3871;
+}
+.observacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 100px;
+}
+
+.notificacao {
+  display: flex;
+  gap: 5px;
 }
 
 .botao {
@@ -57,21 +70,10 @@ textarea::placeholder {
   align-items: flex-end;
   margin-left: 80px;
   gap: 5px;
+  margin-top: 18px;
 }
 
-.observacao {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 100px;
-}
-
-.notificacao{
-  display: flex;
-  gap: 5px;
-}
-
-.botao-criptografar {
+.btn-encriptar {
   width: 300px;
   height: 60px;
   background-color: #0a3871;
@@ -83,7 +85,7 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.botao-descriptografar {
+.btn-desencriptar {
   width: 300px;
   height: 60px;
   background-color: #d8dfe8;
@@ -94,31 +96,51 @@ textarea::placeholder {
   font-size: 16px;
   cursor: pointer;
 }
-
-.esquerda {
-  flex: 1;
+.btn-copiar {
   display: flex;
-  justify-content: flex-end;
-  padding: 15px;
+  width: 300px;
+  height: 60px;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-family: inter;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-left: 72px;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
+.esquerda {
+
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  max-width: 400px;
-  border-radius: 30px;
-  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
   justify-content: center;
-  gap: 5px;
+  align-items: center;
+  gap: 10px;
 }
 
-.imagem {
-  width: 336px;
-  height: 304px;
+.mensagem {
+  display: flex;
+  flex: 1;
+  background: #fff;
+  /* background-image: url(/images/looking.png);*/
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: #0a3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
 }
-
+.mensagem:focus {
+  outline: none;
+}
 .paragrafos {
   display: flex;
   flex-direction: column;
@@ -139,4 +161,10 @@ textarea::placeholder {
   font-family: inter;
   font-size: 16px;
   line-height: 1.4em;
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    flex-direction: column;
+  }
 }
