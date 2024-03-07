@@ -15,6 +15,7 @@ function btnEncriptar() {
 }
 
 function encriptar(stringEncriptada) {
+
   let matrizCodigo = [
     ["e", "enter"],
     ["i", "imes"],
@@ -32,6 +33,7 @@ function encriptar(stringEncriptada) {
       );
     }
   }
+
   return stringEncriptada;
 }
 
@@ -63,7 +65,7 @@ function desencriptar(stringDesencriptada) {
 }
 
 function copiarTexto() {
-
+  
   var textoCopiado = document.getElementById("texto-usuario");
 
   textoCopiado.select();
