@@ -13,37 +13,29 @@
 
   <main class="main">
     <section class="direita">
-
       <div class="container">
         <div class="logo">
           <img class="logo-img" src="/images/logo.png" alt="logo" height="32px" />
         </div>
-
         <textarea class="text-area" placeholder="Digite seu texto" cols="41" rows="4"></textarea>
-
         <div class="observacao">
-             <p class="notificacao"> <img src="./images/simbolo.png" alt="simbolo exclamaçao">Apenas letras minúsculas e sem acento.</p>
-          </div>
-         
-       
+          <p class="notificacao"> <img src="./images/simbolo.png" alt="simbolo exclamaçao">Apenas letras minúsculas e
+            sem acento.</p>
+        </div>
         <div class="botao">
           <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
           <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
         </div>
         <div>
-
         </div>
     </section>
-
     <section class="esquerda">
-         
-      <textarea class="mensagem"  id="input-texto" cols="41" rows="4"></textarea>
-      <button class="btn-copiar"  onclick="copiar()">Copiar</button>
-        
+      <textarea class="mensagem" value="Texto a ser copiado" id="texto-usuario"cols="41" rows="4"></textarea>
+      <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
     </section>
   </main>
 
-
   <script src="/main.js"></script>
 </body>
+
 </html>
